@@ -1,19 +1,25 @@
-import { Route, Switch } from "wouter";
-import HomeView from "./views/HomeView";
+import { Route } from "wouter"
+import HomeView from "./views/HomeView"
+
+
+
 
 function App() {
 
 
   return (
     <>
-     MY PERSONAL WALLET APP
-
-     <Switch>
-        <Route path="/">
-          <HomeView/>
-        </Route>
-
-     </Switch>
+      MY PERSONAL WALLET APP
+      
+      <Route path="/">
+        <HomeView/>
+      </Route>
+      {/* <Route path="/transactions">
+        <TransactionsView/>
+      </Route>
+      <Route path="/settings">
+        <SettingsView/>
+      </Route> */}
     </>
   )
 }

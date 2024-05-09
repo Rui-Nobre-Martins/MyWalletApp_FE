@@ -1,17 +1,17 @@
-import { Link } from "wouter";
+import { Link } from "wouter"
 
 function NavegationBar() {
-    return(
+    return (
         <>
-        <div>
-            <nav>
-                <Link href="/">Home</Link>
-                <Link href="/transactions">Transactions</Link>
-                <Link href="/settings">Settings</Link>
-            </nav>
-        </div>
+            <div className="navBarFixed">
+                <nav>
+                    <Link href="/">Home</Link>
+                    <Link href="/transactions">Transactions</Link>
+                    <Link href="/settings">Settings</Link>
+                </nav>
+            </div>
         </>
     )
 }
 
-export default NavegationBar;
+export default NavegationBar

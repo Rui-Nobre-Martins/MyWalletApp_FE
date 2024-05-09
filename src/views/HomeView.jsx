@@ -1,10 +1,10 @@
 import NavegationBar from "../components/NavigationBar";
 
+
 function HomeView() {
-    return(
+    return (
         <>
-        <NavegationBar/>
-        
+            <NavegationBar/>
         </>
     )
 }
