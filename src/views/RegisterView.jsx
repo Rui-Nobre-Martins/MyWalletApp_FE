@@ -1,9 +1,11 @@
-function Register() {
+import Register from "../components/Register";
+
+function RegisterView() {
     return(
         <>
-        
+            <Register/>
         </>
     )
 }
 
-export default Register
+export default RegisterView

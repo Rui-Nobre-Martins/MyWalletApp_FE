@@ -1,26 +1,25 @@
-import NavegationBar from "../components/NavigationBar";
 
-function Transactions() {
+function TransactionsHomeView() {
     return(
         <>
-        <NavegationBar/>
-        <div className="transactions">
-            <div className="transactionsTitle">
+        <div className="transactionsHomeView">
+            <div className="transactionsTitleHomeView">
                 <p>ADD Transactions</p>
             </div>
             <div className="transactionForm">
                 <form>
+                    <label>Description</label>
                     <input type="text" id="text" name="text" placeholder="Description"/>
+                    <br />
+                    <label>Amount</label>
                     <input type="number" id="number" name="number" placeholder="Amount"/>
-                    <button type="send">OK</button>
+                    <br />
+                    <button className="btnSubmit" type="send">OK</button>
                 </form>
-            </div>
-            <div>
-                <p>transactions List</p>
             </div>
         </div>
         </>
     )
 }
 
-export default Transactions
+export default TransactionsHomeView

@@ -1,13 +1,22 @@
 import NavegationBar from "../components/NavigationBar";
-import Transactions from "../components/Transaction";
+import Balance from "../components/Balance";
+import TransactionsHomeView from "../components/TransactionsHomeView";
+import MyWalletChart from "../components/MyWalletChart";
+
 
 
 function HomeView() {
     return (
         <>
-            <NavegationBar/>
-            
-            homeview
+        <NavegationBar/>
+        <div className="homeViewBalance">
+            <Balance/>
+        </div>
+        <div className="homeViewTransactionAndChart">
+            <TransactionsHomeView/>
+            <MyWalletChart/>  
+        </div>
+        
         </>
     )
 }

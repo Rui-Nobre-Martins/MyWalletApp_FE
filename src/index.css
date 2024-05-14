@@ -1,22 +1,123 @@
+* {
+    font-family: poppins, sans-serif;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
 
-/* register FORM */
-.form-demo .card {
-    min-width: 450px;
+body {
+    background-color: rgb(247, 247, 253, 1);
 }
-.form-demo .card form {
-    margin-top: 2rem;
+
+a {
+    text-decoration: none;
 }
-.form-demo .card .field {
-    margin-bottom: 1.5rem;
+
+/* img {
+    height: auto;
+    max-width: 100%;
+} */
+
+.navBar {
+    position: fixed;
+    padding: 10px;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(212, 212, 212);
 }
-@media screen and (max-width: 960px) {
-    .form-demo .card {
-        width: 80%;
-    }
+
+.navLink {
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+    gap: 5rem;
+    font-weight: 900;
+    font-size: 1rem;
 }
-@media screen and (max-width: 640px) {
-    .form-demo .card {
-        width: 100%;
-        min-width: 0;
-    }
+
+.navLink a {
+    text-decoration: none;
+    color: #000;
 }
+
+.homeViewBalance {
+    display: flex;
+    justify-content: center;
+    padding: 4rem;
+}
+
+.balance {
+    width: 500px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0.5rem;
+    border: 1px solid rgb(212, 212, 212);
+    padding: 2rem;
+}
+
+.balanceTitle {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+
+.balanceAmount {
+    display: flex;
+    justify-content: center;
+}
+
+
+.transactionsTitle {
+    padding-top: 3rem;
+}
+
+.walletChart {
+    background-color: rgb(255, 255, 255);
+    border-radius: 0.5rem;
+    border: 1px solid rgb(212, 212, 212);
+}
+
+.walletChart img {
+    padding: 1.5rem;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.homeViewTransactionAndChart {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.transactionsHomeView {
+    background-color: rgb(255, 255, 255);
+    border-radius: 0.5rem;
+    border: 1px solid rgb(212, 212, 212);
+    padding: 20px;
+}
+
+.transactionsTitleHomeView {
+    display: flex;
+    justify-content: center;
+}
+
+.transactionForm input {
+    display: flex;
+    appearance: none;
+  display: flex;
+  justify-content: center;
+  width: 300px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btnSubmit {
+    cursor: pointer;
+    padding: 10px;
+    background-color: blue;
+  }
+

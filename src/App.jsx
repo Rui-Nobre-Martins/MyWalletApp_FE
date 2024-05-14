@@ -1,8 +1,10 @@
-import { Route } from "wouter"
+import { Route, Switch } from "wouter"
 import HomeView from "./views/HomeView"
 import TransactionsView from "./views/TransactionsView"
-import SettingsView from "./views/SettingsView"
-import Register from "./components/Register"
+
+import RegisterView from "./views/RegisterView"
+import LoginView from "./views/LoginView"
+
 
 
 
@@ -12,18 +14,20 @@ function App() {
 
   return (
     <>
+    <Switch>
       <Route path="/">
         <HomeView/>
       </Route>
       <Route path="/transactions">
         <TransactionsView/>
       </Route>
-      <Route path="/settings">
-        <SettingsView/>
-      </Route>
       <Route path="/register">
-        <Register/>
+        <RegisterView/>
       </Route>
+      <Route path="/login">
+        <LoginView/>
+      </Route>
+    </Switch>
     </>
   )
 }

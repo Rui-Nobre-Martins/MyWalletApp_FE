@@ -10,6 +10,7 @@ function Register(){
                     <input type="text" id="username" name="username" placeholder="Username"/>
                     <input type="password" id="password" name="password" placeholder="Password"/>
                 </form>
+                <button type="submit">Register</button>
             </div>
         </>
     )};
