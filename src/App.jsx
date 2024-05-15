@@ -5,17 +5,13 @@ import TransactionsView from "./views/TransactionsView"
 import RegisterView from "./views/RegisterView"
 import LoginView from "./views/LoginView"
 
-
-// const apiURL = process.env.VITE_REACT_API_URL;
-
-
 function App() {
 
 
   return (
     <>
     <Switch>
-      <Route path="/">
+      <Route path="/overview">
         <HomeView/>
       </Route>
       <Route path="/transactions">

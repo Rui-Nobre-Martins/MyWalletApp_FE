@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* * {
+* {
     font-family: poppins, sans-serif;
     box-sizing: border-box;
     padding: 0px;
@@ -17,12 +17,12 @@ a {
     text-decoration: none;
 }
 
-/* img {
+img {
     height: auto;
     max-width: 100%;
-} */
+}
 
-/* .navBar {
+.navBar {
     position: fixed;
     padding: 10px;
     width: 100%;
@@ -123,5 +123,4 @@ a {
     cursor: pointer;
     padding: 10px;
     background-color: blue;
-  }
- */
+}

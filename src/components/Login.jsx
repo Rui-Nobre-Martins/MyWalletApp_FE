@@ -1,11 +1,13 @@
 import { useState, useEffect } from "react";
 import apiService from "../services/apiService";
+import { useLocation } from "wouter";
 
 
 function Login(){
 
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+    const [location, setLocation] = useLocation();
 
     useEffect(function() {
         (async function checkLogin() {
@@ -16,18 +18,26 @@ function Login(){
         });
      },[]);
 
-     async function login(event) {
+    async function login(event) {
 
         event.preventDefault();
   
         const body = {
         email,
-        password
+        password,
+        location
         };
   
-        const result = await apiService.fetchData("users/login", "POST", body);
-  
+        const result = await apiService.fetchData("users/login", "POST", body);  
         console.log(result);
+
+        if (result.status === "Fail") {
+            alert("Wrong Password") 
+        } else {
+            setLocation("/overview");
+        }
+            
+        
      };
 
 
