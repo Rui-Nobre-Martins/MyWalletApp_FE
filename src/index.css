@@ -1,4 +1,8 @@
-* {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* * {
     font-family: poppins, sans-serif;
     box-sizing: border-box;
     padding: 0px;
@@ -18,7 +22,7 @@ a {
     max-width: 100%;
 } */
 
-.navBar {
+/* .navBar {
     position: fixed;
     padding: 10px;
     width: 100%;
@@ -120,4 +124,4 @@ a {
     padding: 10px;
     background-color: blue;
   }
-
+ */
