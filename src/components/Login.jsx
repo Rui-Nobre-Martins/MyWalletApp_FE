@@ -6,8 +6,6 @@ function Login(){
 
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
-    const [showLoginForm, setShowLoginForm] = useState(false);
-    const [user, setUser] = useState({});
 
     useEffect(function() {
         (async function checkLogin() {
@@ -15,10 +13,8 @@ function Login(){
            const result = await apiService.fetchData("users/login", "GET");
   
            console.log(result);
-           
-           setUser(result);
-        })();
-     }, []);
+        });
+     },[]);
 
      async function login(event) {
 
