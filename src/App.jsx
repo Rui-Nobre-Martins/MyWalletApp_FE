@@ -7,21 +7,23 @@ import LoginView from "./views/LoginView"
 
 function App() {
 
-
   return (
     <>
     <Switch>
-      <Route path="/overview">
-        <HomeView/>
-      </Route>
-      <Route path="/transactions">
-        <TransactionsView/>
-      </Route>
       <Route path="/register">
         <RegisterView/>
       </Route>
+
       <Route path="/login">
         <LoginView/>
+      </Route>
+
+      <Route path="/overview">
+        <HomeView />
+      </Route>
+
+      <Route path="/transactions">
+        <TransactionsView/>
       </Route>
     </Switch>
     </>

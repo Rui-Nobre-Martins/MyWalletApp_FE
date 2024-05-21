@@ -1,22 +1,23 @@
 import NavegationBar from "../components/NavigationBar";
 import Balance from "../components/Balance";
-import TransactionsHomeView from "../components/TransactionsHomeView";
-import MyWalletChart from "../components/MyWalletChart";
-
+import AddTransactions from "../components/AddTransactions";
+// import MyWalletChart from "../components/MyWalletChart";
+import TransactionsList from "../components/TransactionsList";
 
 
 function HomeView() {
     return (
         <>
-        <NavegationBar/>
-        <div className="homeViewBalance">
+        <div className="bg-slate-200 h-screen">
+            <NavegationBar/>
+        <div className="flex justify-center items-center gap-1 px-2">
             <Balance/>
+            <AddTransactions/>
+        </div>    
+            <TransactionsList/>
+            {/* <MyWalletChart/>  */}
         </div>
-        <div className="homeViewTransactionAndChart">
-            <TransactionsHomeView/>
-            <MyWalletChart/>  
-        </div>
-        
+            
         </>
     )
 }

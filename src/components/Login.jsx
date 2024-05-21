@@ -9,15 +9,6 @@ function Login(){
     const [password, setPassword] = useState("");
     const [location, setLocation] = useLocation();
 
-    useEffect(function() {
-        (async function checkLogin() {
-  
-           const result = await apiService.fetchData("users/login", "GET");
-  
-           console.log(result);
-        });
-     },[]);
-
     async function login(event) {
 
         event.preventDefault();
@@ -28,15 +19,15 @@ function Login(){
         location
         };
   
-        const result = await apiService.fetchData("users/login", "POST", body);  
+        const result = await apiService.fetchData("users/login", "POST", body); 
         console.log(result);
 
-        if (result.status === "Fail") {
-            alert("Wrong Password") 
+        if (result.status === "success") {
+            localStorage.setItem("user_id", result.user);
+            setLocation('/overview');
         } else {
-            setLocation("/overview");
+            alert("Wrong Password")
         }
-            
         
      };
 
@@ -68,7 +59,7 @@ function Login(){
                     onChange={(event) => setPassword(event.target.value)}
                     />
 
-                    <button className="cursor-pointer max-w-96 p-2 text-white font-medium bg-slate-500 hover:bg-slate-400"
+                    <button className="cursor-pointer max-w-96 p-2 text-white font-medium bg-slate-500 hover:bg-slate-400 rounded"
                     typeof="submit">LOGIN</button>
                 </form>
 
@@ -80,3 +71,6 @@ function Login(){
 
 
 export default Login
+
+
+

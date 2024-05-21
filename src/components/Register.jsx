@@ -44,7 +44,8 @@ function Register(){
         <>
         <div className="w-full min-h-screen flex justify-center px-4 bg-slate-200">
             <div className="my-10 w-full md:max-w2xl flex justify-center items-center flex-col">
-                <h1 className="text-4xl font-medium text-black content-center ">My Wallet App - Register</h1>
+                <h1 className="text-4xl font-medium text-black content-center ">Create Account
+                    - My Wallet App </h1>
 
                 <form onSubmit={register} className="flex flex-col my-6">
                     <label className="font-medium text-center text-black">Email</label>
