@@ -8,7 +8,7 @@ import TransactionsList from "../components/TransactionsList";
 function HomeView() {
     return (
         <>
-        <div className="bg-slate-200 h-full flex flex-col justify-center items-center">
+        <div className="bg-slate-200 h-screen flex flex-col items-center">
             <NavegationBar/>
             <div className="flex justify-center items-center gap-1 px-2">
                 <Balance/>
