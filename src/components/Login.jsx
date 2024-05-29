@@ -22,7 +22,7 @@ function Login(){
         const result = await apiService.fetchData("users/login", "POST", body); 
         console.log(result);
 
-        if (result.status === "success") {
+        if (result.status === "Success") {
             localStorage.setItem("user_id", result.user);
             setLocation('/overview');
         } else {

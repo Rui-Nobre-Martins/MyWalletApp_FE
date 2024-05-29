@@ -4,7 +4,7 @@ function Transactions() {
     return(
         <>
         <NavegationBar/>
-        <div className="transactions">
+        {/* <div className="transactions">
             <div className="transactionsTitle">
                 <p>ADD Transactions</p>
             </div>
@@ -14,11 +14,8 @@ function Transactions() {
                     <input type="number" id="number" name="number" placeholder="Amount"/>
                     <button type="send">OK</button>
                 </form>
-            </div>
-            <div>
-                <p>transactions List</p>
-            </div>
-        </div>
+            </div> */}
+        {/* </div> */}
         </>
     )
 }

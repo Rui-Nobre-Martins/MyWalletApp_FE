@@ -20,7 +20,7 @@ function Balance() {
             <div className="bg-white border-2 border-slate-300 rounded drop-shadow p-9 flex flex-col text-center">
                 <h1 className="text-1xl">My Balance</h1>
                 <hr />
-                <h2 className="text-3xl">{amount.totalBalance}</h2>
+                <h2 className="text-3xl">{amount.totalBalance}€</h2>
   
             </div>
         </>

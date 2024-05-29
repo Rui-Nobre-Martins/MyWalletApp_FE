@@ -1,5 +1,6 @@
 import { useState } from "react"
 import apiService from "../services/apiService";
+import HomeView from "../views/HomeView";
 
 function AddTransactions() {
 
@@ -17,6 +18,7 @@ function AddTransactions() {
         const user_id = localStorage.getItem("user_id");
         const result = await apiService.fetchData(`transactions/${user_id}`, "POST", body );
         console.log(result);
+        location.reload();
     };
 
     return(
@@ -46,7 +48,7 @@ function AddTransactions() {
                 <br />
                 <p className="text-slate-400">To add an expense put minus before de number</p>
                 <button  
-                className="cursor-pointer max-w-96 p-2 text-white font-medium bg-slate-500 hover:bg-slate-400 rounded"
+                className="cursor-pointer max-w-96 p-2 bg-blue-500 hover:bg-blue-300 text-white rounded"
                 type="send">OK
                 </button>
                 </form>

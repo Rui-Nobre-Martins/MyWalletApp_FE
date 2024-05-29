@@ -2,7 +2,7 @@
 function MyWalletChart() {
     return(
         <>
-        <div className="walletChart">
+        <div>
             <img src="../public/images/chartExample.png" alt="" />
         </div>
         </>

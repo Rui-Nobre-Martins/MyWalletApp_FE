@@ -5,6 +5,7 @@ function TransactionsView() {
     return(
         <>
         <Transactions/>
+        <p className="h-full flex flex-col justify-center items-center">PLAN PRO</p>
         </>
     )
 }
