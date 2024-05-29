@@ -4,6 +4,7 @@ import apiService from "../services/apiService"
 function Balance() {
     
     const [amount, setAmount] = useState({});
+    
     useEffect(function() {
         (async function getAmount() {
          

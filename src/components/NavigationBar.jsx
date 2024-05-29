@@ -1,8 +1,24 @@
 import { Link } from "wouter"
 import { FiUser, FiLogIn} from "react-icons/fi"
+import { useEffect, useState } from "react"
+import apiService from "../services/apiService"
 
 
 function NavegationBar() {
+
+    const  [name, setName] = useState({})
+
+    useEffect(function(){
+        (async function getName() {
+         
+            const id = localStorage.getItem("user_id");
+            const result = await apiService.fetchData(`users/${id}`, "GET");
+            
+            console.log(result)
+            setName(result);
+            })();
+         },[]);
+
     return (
         <>
         <div className="w-full flex items-center justify-center h-16 bg-white drop-shadow mb-4">
@@ -24,12 +40,14 @@ function NavegationBar() {
                 </Link>
 
                 {/* <Link href="/settings">Settings</Link> */}
+                <p>Hello, {name.username}</p>
 
                 <Link 
                 className="cursor-pointer max-w-96 p-2 text-white font-medium hover:bg-slate-100"
                 href="/overview">
                 <FiUser size={24} color="#000"></FiUser>
                 </Link>
+                
 
             </header>
         </div>
