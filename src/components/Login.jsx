@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import apiService from "../services/apiService";
 import { useLocation } from "wouter";
 
@@ -20,8 +20,7 @@ function Login(){
         };
   
         const result = await apiService.fetchData("users/login", "POST", body); 
-        console.log(result);
-
+        
         if (result.status === "Success") {
             localStorage.setItem("user_id", result.user);
             setLocation('/overview');

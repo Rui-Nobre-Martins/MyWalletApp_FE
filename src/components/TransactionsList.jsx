@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react"
 import apiService from "../services/apiService"
-import { FaTrash } from "react-icons/fa";
-import { FaPen } from "react-icons/fa";
+import { FaTrash } from "react-icons/fa"
+import { FaPen } from "react-icons/fa"
+
+
 
 function TransactionsList() {
 
@@ -80,7 +82,7 @@ function TransactionsList() {
                             </td>
                             <td>
                                 <button
-                                className="p-2 m-1  bg-red-500  hover:bg-blue-300 text-white rounded"
+                                className="p-2 m-1  bg-red-500  hover:bg-red-300 text-white rounded"
                                 onClick={async () => await deleteTransaction(transaction.id)}>
                                 <FaTrash/></button>
                             </td>
