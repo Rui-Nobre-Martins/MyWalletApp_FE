@@ -8,7 +8,7 @@ import TransactionsList from "../components/TransactionsList";
 function HomeView() {
     return (
         <>
-        <div className="bg-zinc-100 h-screen ">
+        <div className="bg-zinc-100 f-screen ">
             <div className="flex flex-col items-center">    
                 <NavegationBar/>
                 <div className="flex justify-center items-center gap-1 px-2">
@@ -18,7 +18,7 @@ function HomeView() {
                 <div className="gap-1 px-2">
                     <TransactionsList/>
                 </div>
-                <div className="max-w-xl px-10 pb-1 bg-white shadow rounded-lg flex justify-center items-center">
+                <div className="max-w-xl px-5 mb-4 bg-white shadow rounded-lg">
                     <MyWalletChart/> 
                 </div>
             </div>
